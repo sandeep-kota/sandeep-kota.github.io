@@ -89,6 +89,22 @@ a:hover {
   background-position: center center;
 }
 
+.bg-video {
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-video video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%) translateY(-50%);
+}
+
 .overlay-mf {
   background-color: #0078ff;
 }
@@ -226,6 +242,26 @@ a:hover {
   box-shadow: 0 0 0 3px #cde1f8;
   transition: all 500ms ease;
 }
+
+/*-------/ Social Links Home /-----*/
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links a {
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+  margin: 0 0.5rem; /* This adds space on both sides of the icons */
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+  color: #007bff; /* Bootstrap primary color, change as needed */
+}
+/*-------/ Social Links Home /-----*/
+
 
 /*------/ Ul resect /------*/
 
@@ -1264,46 +1300,67 @@ footer .credits a {
   }
 }
 
+/*======================================
+//--//-->   Skills
+======================================*/
+
 .skills-grid {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.skills-grid .title-s {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .skill-icons {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  gap: 10px;
-  padding: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(35px, 1fr));
+  gap: 1rem;
 }
 
-.skill-icons img {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 8px; /* Ensure spacing between the icon and text label */
-}
-
-.skill-icons div {
-  margin-top: 10px;
+.skill-icons > div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
-.skill-icons i {
-  font-size: 48px; /* Icon size */
-  color: #333; /* Icon color */
+.skill-icons img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.5rem;
 }
 
 .skill-icons span {
-  margin-top: 10px;
+  font-size: 0.6rem;
 }
 
+@media (max-width: 768px) {
+  .skill-icons {
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  }
+
+  .skill-icons img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .skill-icons span {
+    font-size: 0.8rem;
+  }
+}
+
+
+
 .rounded-circle {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   object-fit: cover;
+  position: relative;
+  top: -20px; /* Move the image 20 pixels up */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Softer and wider shadow */
 }
 
