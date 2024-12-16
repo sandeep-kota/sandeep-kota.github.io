@@ -125,3 +125,26 @@ function scrollToItem(index) {
         behavior: 'smooth'
     });
 }
+
+// document.addEventListener('DOMContentLoaded', function() {
+// 	const seeMoreButtons = document.querySelectorAll('.see-more-btn');
+	
+// 	seeMoreButtons.forEach(button => {
+// 	  button.addEventListener('click', function() {
+// 		const bulletsList = this.nextElementSibling;
+// 		const isVisible = bulletsList.style.display !== 'none';
+		
+// 		if (isVisible) {
+// 		  bulletsList.style.display = 'none';
+// 		  this.textContent = 'See More';
+// 		  this.classList.remove('active');
+// 		} else {
+// 		  bulletsList.style.display = 'block';
+// 		  this.textContent = 'See Less';
+// 		  this.classList.add('active');
+// 		}
+// 	  });
+// 	});
+//   });
+  
+  

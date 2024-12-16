@@ -661,7 +661,7 @@ a:hover {
 .intro .intro-title {
   color: #fff;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .intro .intro-subtitle {
@@ -737,6 +737,178 @@ a:hover {
 }
 
 /*======================================
+//--//-->   EXPERIENCE
+======================================*/
+/* Experience Section Styles */
+.experience-mf {
+  background-color: #f5f5f5;
+  padding: 4rem 0;
+}
+
+.experience-timeline {
+  position: relative;
+  padding: 0;
+  list-style: none;
+}
+
+.experience-timeline:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  margin-left: -1px;
+  background-color: #e9ecef;
+}
+
+.experience-item {
+  position: relative;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.experience-item:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #0078ff;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.experience-content,
+.experience-media {
+  width: 45%;
+}
+
+.experience-content {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.experience-content h4 {
+  margin: 0 0 5px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e1e1e;
+}
+
+.experience-content h5 {
+  margin: 0 0 10px;
+  font-size: 16px;
+  color: #0078ff;
+}
+
+.experience-content h5 a {
+  color: #0078ff; /* This should match the color you're using for h5 elements */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.experience-content h5 a:hover {
+  color: #0056b3; /* A darker shade for hover effect */
+  text-decoration: underline;
+}
+
+
+.experience-date,
+.experience-location {
+  font-size: 14px;
+  color: #6c757d;
+  margin-bottom: 5px;
+}
+
+.experience-location i {
+  margin-right: 5px;
+}
+
+.experience-bullets {
+  padding-left: 20px;
+  margin-top: 15px;
+}
+
+.experience-bullets > li {
+  font-size: 14px;
+  color: #4e4e4e;
+  margin-bottom: 10px;
+}
+
+.experience-bullets > li > ul {
+  margin-top: 5px;
+  padding-left: 20px;
+  list-style-type: circle;
+}
+
+.experience-bullets > li > ul > li {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 3px;
+}
+
+.see-more-btn {
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.see-more-btn.active {
+  background-color: #0056b3;
+}
+
+/* Media query for responsive design */
+@media (max-width: 767px) {
+  .experience-timeline:before {
+    left: 0;
+  }
+  
+  .experience-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 30px;
+  }
+  
+  .experience-item:before {
+    left: 0;
+  }
+  
+  .experience-content,
+  .experience-media {
+    width: 100%;
+  }
+  
+  .experience-media {
+    margin-top: 20px;
+  }
+}
+
+.company-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-right: 15px;
+}
+
+.company-info {
+  flex: 1;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+/*======================================
 //--//-->   SERVICES
 ======================================*/
 
@@ -803,7 +975,7 @@ a:hover {
 /*======================================
 //--//-->   PORTFOLIO
 ======================================*/
-
+/* 
 .work-box {
   margin-bottom: 3rem;
   -webkit-backface-visibility: hidden;
@@ -854,7 +1026,7 @@ a:hover {
 
 .w-title {
   font-size: 1.2rem;
-}
+} */
 
 /*======================================
 //--//-->   TESTIMONIALS
@@ -1337,7 +1509,7 @@ footer .credits a {
   font-size: 0.6rem;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .skill-icons {
     grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
   }
@@ -1350,7 +1522,7 @@ footer .credits a {
   .skill-icons span {
     font-size: 0.8rem;
   }
-}
+} */
 
 
 
