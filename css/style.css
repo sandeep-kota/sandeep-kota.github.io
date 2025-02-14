@@ -912,40 +912,44 @@ a:hover {
 //--//-->   SERVICES
 ======================================*/
 
-.service-box {
+.projects-box {
   background-color: #fff;
   padding: 2.5rem 1.3rem;
   border-radius: 1rem;
   margin-bottom: 3rem;
 }
 
-.service-box:hover .ico-circle {
+.projects-box:hover .ico-circle {
   transition: all 500ms ease;
   color: #fff;
   background-color: #0078ff;
   box-shadow: 0 0 0 10px #cde1f8;
 }
 
-.service-box .service-ico {
+.projects-box .projects-ico {
   margin-bottom: 1rem;
   color: #1e1e1e;
 }
 
-.service-box .ico-circle {
+.projects-box .ico-circle {
   transition: all 500ms ease;
   font-size: 4rem;
 }
 
-.service-box .s-title {
+.projects-box .s-title {
   font-size: 1.4rem;
   text-transform: uppercase;
   text-align: center;
   padding: .4rem 0;
 }
 
-.service-box .s-description {
+.projects-box .s-description {
   color: #4e4e4e;
 }
+
+/* Added from here
+
+
 
 /*======================================
 //--//-->   COUNTER
@@ -1123,6 +1127,12 @@ a:hover {
   color: #4e4e4e;
   display: inline-block;
   float: right;
+}
+
+.card-img img {
+  width: 100%; /* Ensures the image takes up the full width of its container */
+  height: 250px; /* Fixed height for the image */
+  object-fit: cover; /* Maintains aspect ratio and covers the entire area */
 }
 
 /*======================================
